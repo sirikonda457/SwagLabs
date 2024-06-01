@@ -13,7 +13,7 @@ public static void testLoginLoad() {
 	WebDriver driver;
 	System.setProperty("webdriver.gecko.driver","C:\\Web Browser\\geckodriver-v0.34.0-win32\\geckodriver.exe");
 	driver = new FirefoxDriver();
-	driver.get("https://www.saucedemo.com/v1/");
+	driver.get("https://www.saucedemo.com/v1/");  //given code is run successful
 	driver.findElement(By.xpath("//input[@id=\"user-name\"]")).sendKeys("standard_user");
 	driver.findElement(By.xpath("//input[@id=\"password\"]")).sendKeys("secret_sauce");
 	driver.findElement(By.xpath("//input[@id=\"login-button\"]")).click();
